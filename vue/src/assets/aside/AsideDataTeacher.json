@@ -1,0 +1,13 @@
+﻿{
+  "active": "请假查看",
+  "data": [
+    {
+      "title": "请假查看",
+      "ico": "el-icon-location"
+    },
+    {
+      "title": "个人信息",
+      "ico": "el-icon-user-solid"
+    }
+  ]
+}

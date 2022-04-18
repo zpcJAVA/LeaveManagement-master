@@ -1,0 +1,22 @@
+<view class="page">
+    <view>
+        <leave-apply wx:if="{{router === 'apply'}}" id="leaveApply"/>
+        <trash-bin wx:if="{{router === 'trashBin'}}"/>
+    </view>
+    <view class="page__bd">
+      <view class="weui-tabbar">
+          <view class="weui-tabbar__item {{ router === 'apply'?'weui-bar__item_on':''}}" bindtap="toApply">
+              <view style="position: relative;display:inline-block;">
+                <image src="/img/nav-list{{ router === 'apply'?'-active':''}}.png" class="weui-tabbar__icon"></image>
+              </view>
+              <view class="weui-tabbar__label">请假申请</view>
+          </view>
+          <view class="weui-tabbar__item {{ router === 'trashBin'?'weui-bar__item_on':''}}" bindtap="toTrachBin">
+              <view style="position: relative;display:inline-block;">
+                <image src="/img/trash-bin{{ router === 'trashBin'?'-active':''}}.png" class="weui-tabbar__icon"></image>
+              </view>
+              <view class="weui-tabbar__label">回收站</view>
+          </view>
+      </view>
+    </view>
+</view>
