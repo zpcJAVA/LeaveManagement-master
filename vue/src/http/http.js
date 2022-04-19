@@ -1,6 +1,6 @@
 import axios from 'axios'
 import Qs from 'qs'
-const devApi = 'http://localhost:8080/api/';
+const devApi = 'http://localhost:8888/api/';
 axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
 const instance = axios.create({
     baseURL: devApi,
